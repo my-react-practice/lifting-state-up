@@ -66,7 +66,7 @@ class App extends Component {
           onTemperatureChange={this.handleFahrenheitChange}
         />
 
-        <BoilingVerdict celsius={temperature} />
+        <BoilingVerdict celsius={celsius} />
       </div>
     );
   }
