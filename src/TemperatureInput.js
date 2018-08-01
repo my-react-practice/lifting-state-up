@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 const scaleNames = {
-  c: 'Celsius',
-  f: 'Fahrenheit'
+  c: '摄氏',
+  f: '华氏'
 };
 
 class TemperatureInput extends Component {
@@ -19,7 +19,7 @@ class TemperatureInput extends Component {
     const { temperature, scale } = this.props;
     return (
       <fieldset>
-        <legend>Enter temperature in {scaleNames[scale]}:</legend>
+        <legend>输入一个{scaleNames[scale]}温度：</legend>
         <input value={temperature} onChange={this.handleChange} />
       </fieldset>
     );
